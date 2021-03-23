@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Alisa](https://up.htmlacademy.ru/adaptive/22/user/1701403).
-* Наставник: `Неизвестно`.
+* Наставник: [Артем Михайлов](https://htmlacademy.ru/profile/id327277).
 
 ---
 
