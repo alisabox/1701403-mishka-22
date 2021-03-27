@@ -56,10 +56,14 @@
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="categories__list">
           <li class="categories__item">
-              Предметы интерьера
+            <a class="categories__link" href="blank.html">
+              <p class="categories__text">Предметы интерьера</p>
+            </a>
           </li>
           <li class="categories__item">
-              Детские игрушки
+            <a class="categories__link" href="blank.html">
+              <p class="categories__text">Детские игрушки</p>
+            </a>
             </li>
         </ul>
       </section>
@@ -88,6 +92,29 @@
           <a class="button button-order" href="#">Заказать</a>
         </div>
       </section>
+      <section class="modal visually-hidden">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <form class="modal__form" method="get" action="https://echo.htmlacademy.ru/">
+          <fieldset class="modal__size">
+            <legend class="modal__legend">Выберите размер:</legend>
+            <ul class="modal__list">
+              <li class="modal__item">
+                <input class="visually-hidden modal__item--radio" type="radio" name="featured-item__size" id="s-size" value="s-size" checked>
+                <label for="s-size">S</label>
+              </li>
+              <li class="form__item">
+                <input class="visually-hidden modal__item--radio" type="radio" name="featured-item__size" id="m-size" value="m-size">
+                <label for="m-size">M</label>
+              </li>
+              <li class="form__item">
+                <input class="visually-hidden modal__item--radio" type="radio" name="featured-item__size" id="l-size" value="l-size">
+                <label for="l-size">L</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button modal__button-submit" type="submit">Добавить</button>
+        </form>
+      </section>
       <section class="about">
         <h2 class="visually-hidden">Информация о магазине</h2>
         <p class="about__title">Коротко о нас:</p>
@@ -113,7 +140,7 @@
           <button class="previous-review" type="button" aria-label="Предыдущий отзыв">Предыдущий отзыв</button>
           <button class="next-review" type="button" aria-label="Следующий отзыв">Следующий отзыв</button>
         </p>
-        <a class="button button-send-review" href="#">Написать</a>
+        <a class="button button-send-review" href="blank.html">Написать</a>
         </div>
       </section>
       <section class="contacts">
@@ -124,8 +151,8 @@
           <dt class="contacts__adress">адрес:</dt>
           <dd>г. Санкт-Петербург<br>ул. Большая Конюшенная<br>д. 19/8, офис 101</dd>
         </dl>
-        <img class="contacts__map" src="img/map-mobile@1x.jpg" width="320" height="454" alt="Карта как добраться до магазина">
-        <a class="button button-send-email" href="#">Напишите нам</a>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sjp!4v1616842731491!5m2!1sru!2sjp" style="border:0;" loading="lazy" width="320" height="454" allowfullscreen title="Карта как добраться до магазина"></iframe>
+        <a class="button button-send-email" href="blank.html">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
