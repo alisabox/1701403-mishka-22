@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
     <link rel="icon" href="favicon-32.ico">
     <link rel="icon" href="img/favicons/favicon-152.svg" type="image/svg+xml">
@@ -73,20 +74,20 @@
           <h3 class="featured-item__name">Вязаные корзинки</h3>
           <p class="featured-item__tag">Товар недели</p>
           <p class="featured-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="featured-item__details">
-            <tr>
-              <th>Цвет:</th>
-              <td>«Тиффани»/серый</td>
-            </tr>
-              <tr>
-                <th>Диаметр:</th>
-                <td>25 см</td>
+          <div class="featured-item__details-table">
+            <div class="details-table__row">
+              <div>Цвет:</div>
+              <div>«Тиффани»/серый</div>
+            </div>
+              <div class="details-table__row">
+                <div>Диаметр:</div>
+                <div>25 см</div>
+              </div>
+              <div class="details-table__row">
+                <div>Высота:</div>
+                <div>15 см</div>
               </tr>
-              <tr>
-                <th>Высота:</th>
-                <td>15 см</td>
-              </tr>
-          </table>
+            </div>
           <img class="featured-item__image" src="img/triple-set-mobile.jpg" width="260" height="315" alt="Набор из трех вязаных корзинок разных размеров">
           <p class="featured-item__price">Цена: 990 руб.</p>
           <a class="button button-order" href="#">Заказать</a>
