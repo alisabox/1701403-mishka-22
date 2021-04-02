@@ -1,0 +1,58 @@
+.about {
+  @include padding-left-right;
+}
+
+.about__title {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 83px;
+}
+
+.about__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about__item {
+  margin-bottom: 83px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  position: relative;
+  max-width: 325px;
+}
+
+.about__item::before {
+  position: absolute;
+  top: -55px;
+}
+
+.about__item--eco::before {
+  content: url("../img/icon-1.svg");
+}
+
+.about__item--price::before {
+  content: url("../img/icon-3.svg");
+}
+
+.about__item--likes::before {
+  content: url("../img/icon-5.svg");
+}
+
+.about__item--hand-made::before {
+  content: url("../img/icon-2.svg");
+}
+
+.about__item--local::before {
+  content: url("../img/icon-4.svg");
+  left: -6px;
+}
+
+.about__item--wrapping::before {
+  content: url("../img/icon-6.svg");
+}

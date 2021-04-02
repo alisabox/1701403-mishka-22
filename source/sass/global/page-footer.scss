@@ -1,0 +1,7 @@
+.page-footer {
+  background-color: $decoration-grey;
+}
+
+.page-footer__wrapper {
+  @include padding-left-right;
+}
