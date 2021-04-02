@@ -1,0 +1,17 @@
+.user-navigation li {
+  position: relative;
+}
+
+.user-navigation__search::before {
+  content: url("../img/search.svg");
+  position: absolute;
+  top: 32px;
+  left: 32px;
+}
+
+.user-navigation__cart::before {
+  content: url("../img/cart.svg");
+  position: absolute;
+  top: 31px;
+  left: 30px;
+}

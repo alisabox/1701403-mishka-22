@@ -1,0 +1,40 @@
+.reviews__wrapper {
+  @include padding-left-right;
+}
+
+.reviews__title {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__text {
+  font-size: 15px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.reviews__author-name {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.reviews__author-email a {
+  text-decoration: none;
+  line-height: 30px;
+  color: $basic-dark-grey;
+}
+
+.reviews__navigation {
+  display: flex;
+}

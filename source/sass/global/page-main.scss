@@ -1,0 +1,19 @@
+.page-main {
+  background-image: url("../img/hero-mobile@2x.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.page-main__slogan {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  word-break: break-word;
+  padding-top: 73px;
+  margin: 0;
+  margin-bottom: 120px;
+
+  @include padding-left-right;
+}

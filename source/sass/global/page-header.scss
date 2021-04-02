@@ -1,0 +1,26 @@
+.page-header {
+  border-bottom: 1px solid $light-grey-border;
+}
+
+.page-header__logo {
+  display: flex;
+  justify-content: center;
+  height: 78px;
+}
+
+.page-header__logo img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 22px;
+  margin: auto;
+  width: 149px;
+}
+
+.page-header__logo:hover {
+  opacity: 0.6;
+}
+
+.page-header__logo:active {
+  opacity: 0.3;
+}

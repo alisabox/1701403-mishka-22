@@ -1,0 +1,24 @@
+.copyright {
+  min-height: 79px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright__text {
+  margin-right: 27px;
+}
+
+.copyright__link {
+  fill: $light-green;
+
+  &:hover,
+  &:focus {
+    fill: $dark-green-hover;
+  }
+
+  &:active {
+    fill: $dark-green-hover;
+    opacity: 0.3;
+  }
+}
