@@ -24,7 +24,8 @@
   border-top: 1px solid $light-grey-border;
 }
 
-.page-navigation__list a {
+.page-navigation__list a,
+.page-navigation__list .current-page {
   display: flex;
   align-items: center;
   min-height: 78px;
