@@ -1,0 +1,11 @@
+.catalog {
+  margin-bottom: 30px;
+
+  @include padding-left-right;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
