@@ -16,4 +16,18 @@
   margin-bottom: 120px;
 
   @include padding-left-right;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 154px;
+    margin-bottom: 372px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 157px;
+    margin-bottom: 355px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

@@ -1,5 +1,37 @@
+.user-navigation {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 89px;
+    margin-right: 50px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    justify-self: flex-end;
+    border-bottom: 1px solid $light-grey-border;
+    margin: 0;
+    padding-right: 50px;
+  }
+}
+
+.user-navigation span {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .user-navigation li {
   position: relative;
+}
+
+.user-navigation a {
+  @media (min-width: $tablet-width) {
+    height: 89px;
+    border-left: 1px solid $light-grey-border;
+  }
 }
 
 .user-navigation__search::before {
@@ -7,6 +39,10 @@
   position: absolute;
   top: 32px;
   left: 32px;
+
+  @media (min-width: $tablet-width) {
+    top: 36px;
+  }
 }
 
 .user-navigation__cart::before {
@@ -14,4 +50,8 @@
   position: absolute;
   top: 31px;
   left: 30px;
+
+  @media (min-width: $tablet-width) {
+    top: 35px;
+  }
 }

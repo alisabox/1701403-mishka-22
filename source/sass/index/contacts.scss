@@ -1,11 +1,49 @@
+.contacts {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 105px;
+  }
+}
+
 .contacts__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 28px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 28px;
 
   @include padding-left-right;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    font-size: 43px;
+    line-height: 50px;
+
+    @include padding-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 224px;
+    padding-top: 79px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.contacts__title::after {
+  @media (min-width: $tablet-width) {
+    content: url("../img/flag.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 113px;
+  }
 }
 
 .contacts__text {
@@ -19,13 +57,53 @@
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 30px;
-  margin-bottom: 12px;
+  margin: 0;
+  margin-bottom: 62px;
 
   @include padding-left-right;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 49px;
+    font-size: 17px;
+
+    @include padding-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    padding-left: 224px;
+    margin-bottom: 85px;
+    max-width: 377px;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: min-content 1fr;
+  }
+}
+
+.contacts__list dt {
+  @media (min-width: $tablet-width) {
+    padding-right: 25px;
+  }
 }
 
 .contacts__list dd {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 50px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 25px;
+    margin-bottom: 33px;
+  }
+}
+
+.contacts__list dd:last-child {
+  margin-bottom: 0;
+  padding-right: 0;
 }
 
 .contacts__list a {
@@ -52,4 +130,16 @@
   background-image: url("../img/map-mobile@1x.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 527px;
+    height: 457px;
+  }
 }

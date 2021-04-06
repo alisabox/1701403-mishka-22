@@ -1,20 +1,78 @@
 .about {
   @include padding-left-right;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    @include padding-tablet;
+    margin-bottom: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 90px;
+  }
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background-image: url("../img/zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: contain;
+
+  @media (min-width: $tablet-width) {
+    height: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 23px;
+  }
 }
 
 .about__title {
+  margin: 0;
+  margin-bottom: 83px;
+  padding-top: 31px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
-  margin: 0;
-  margin-bottom: 83px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 56px;
+    margin-bottom: 98px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 68px;
+    padding-left: 175px;
+    margin-bottom: 95px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .about__list {
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
   margin: 0;
   padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 175px;
+  }
 }
 
 .about__item {
@@ -22,9 +80,39 @@
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
-  line-height: 30px;
   position: relative;
   max-width: 325px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 325px;
+    margin-bottom: 110px;
+    margin-right: 10px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 25px;
+  }
+}
+
+.about__item:last-child,
+.about__item:nth-last-child(2) {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.about__item:nth-child(even) {
+  margin-right: 0;
+}
+
+.about__item--eco,
+.about__item--price,
+.about__item--likes {
+  @media (max-width: $mobile-width-only) {
+    order: -1;
+  }
 }
 
 .about__item::before {

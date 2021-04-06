@@ -1,5 +1,17 @@
+.featured-item__wrapper {
+  position: relative;
+}
+
 .featured-item {
   @include padding-left-right;
+
+  @media (min-width: $tablet-width) {
+    @include padding-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 224px;
+  }
 }
 
 .featured-item__name {
@@ -9,6 +21,19 @@
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 61px;
+    margin-bottom: 35px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .featured-item__tag {
@@ -20,23 +45,58 @@
   text-transform: uppercase;
   color: $light-green;
   margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    margin-top: 13px;
+    width: 100px;
+    text-align: center;
+    line-height: 15px;
+    word-break: keep-all;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -143px;
+    top: 69px;
+    margin: 0;
+  }
 }
 
 .featured-item__description {
+  max-width: 292px;
   font-size: 15px;
   line-height: 24px;
   color: $basic-dark-grey;
   margin: 0;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 60px;
+    }
+  }
 }
 
 .featured-item__details-table {
+  max-width: 292px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   font-size: 15px;
   color: $basic-dark-grey;
   margin-bottom: 28px;
-  max-width: 291px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 109px;
+  }
 }
 
 .details-table__row {
@@ -55,9 +115,25 @@
   width: 260px;
   height: 315px;
   background-color: $decoration-grey;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 334px;
+    height: 404px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    width: 525px;
+    height: 636px;
+    z-index: -1;
+  }
 }
 
 .featured-item__price {
+  max-width: 292px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
@@ -66,4 +142,8 @@
   margin: 0;
   margin-bottom: 24px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
 }

@@ -4,4 +4,23 @@
 
 .page-footer__wrapper {
   @include padding-left-right;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    min-height: 143px;
+    justify-content: space-between;
+    align-items: center;
+
+    @include padding-tablet;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 102px;
+    height: 34px;
+  }
 }
