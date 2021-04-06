@@ -19,3 +19,13 @@ $modal-shadow: rgba(0, 1, 1, 0.25);
   padding-left: 30px;
   padding-right: 30px;
 }
+
+@mixin padding-tablet {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* Media */
+$tablet-width: 768px;
+$desktop-width: 1150px;
+$mobile-width-only: 767px;

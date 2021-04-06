@@ -6,6 +6,26 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.categories__list::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    right: 0;
+    height: 24px;
+    width: 100%;
+    background-image: url("../img/zigzag-fill-desktop.svg");
+    background-repeat: repeat-x;
+  }
 }
 
 .categories__item {
@@ -60,6 +80,10 @@
   display: flex;
   min-height: 103px;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    min-height: 119px;
+  }
 }
 
 .categories__text {

@@ -1,11 +1,14 @@
 .page-navigation__toggle {
-  border: none;
-  padding: 0;
-  background-color: $basic-white;
   position: absolute;
   top: 29px;
   right: 30px;
-  // display: none;
+  border: none;
+  padding: 0;
+  background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .page-navigation__toggle::before {
@@ -14,14 +17,32 @@
   height: 20px;
 }
 
+.page-navigation__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    // padding-left: 50px;
+    // padding-right: 50px;
+    border-top: 1px solid $light-grey-border;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-template-rows: 1fr 1fr;
+    // column-gap: 130px;
+  }
+}
+
 .page-navigation__list {
   list-style: none;
   margin: 0;
   padding: 0;
-}
 
-.page-navigation__list li {
-  border-top: 1px solid $light-grey-border;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .page-navigation__list a,
@@ -46,6 +67,14 @@
 }
 
 .page-navigation__delivery-info {
+  display: none;
   margin: 0;
+  padding-right: 50px;
   color: $basic-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-self: center;
+    justify-self: flex-end;
+  }
 }

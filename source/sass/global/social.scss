@@ -7,6 +7,10 @@
   min-height: 80px;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .social__item {
