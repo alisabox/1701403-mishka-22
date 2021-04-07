@@ -21,16 +21,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    // padding-left: 50px;
-    // padding-right: 50px;
     border-top: 1px solid $light-grey-border;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr max-content;
-    grid-template-rows: 1fr 1fr;
-    // column-gap: 130px;
+    grid-template-rows: 1fr min-content;
   }
 }
 
@@ -42,6 +39,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+.page-navigation__list li {
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $light-grey-border;
   }
 }
 
@@ -70,11 +73,16 @@
   display: none;
   margin: 0;
   padding-right: 50px;
+  font-size: 15px;
   color: $basic-dark-grey;
 
   @media (min-width: $tablet-width) {
     display: flex;
     align-self: center;
     justify-self: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
   }
 }

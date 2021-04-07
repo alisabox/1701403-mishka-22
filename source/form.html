@@ -15,7 +15,9 @@
       <div class="page__body">
         <header class="page-header">
           <a class="page-header__logo" href="index.html">
-            <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+            <img class="page-header__logo-mobile" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+            <img class="page-header__logo-tablet" src="img/mishka-logo-tablet.svg" width="113" height="46" alt="Магазин «Мишка»">
+            <img class="page-header__logo-desktop" src="img/mishka-logo-desktop.svg" width="149" height="72" alt="Магазин «Мишка»">
           </a>
           <nav class="page-navigation">
             <button class="page-navigation__toggle">
@@ -32,13 +34,13 @@
               </ul>
               <ul class="page-navigation__list user-navigation">
                   <li class="user-navigation__search">
-                    <a href="blank.html">Поиск по сайту</a>
+                    <a href="blank.html"><span>Поиск по сайту</span></a>
                   </li>
                   <li class="user-navigation__cart">
                     <a href="blank.html">Корзина: пока пуста</a>
                   </li>
               </ul>
-              <ul class="page-navigation__list aside-navigation visually-hidden">
+              <ul class="page-navigation__list aside-navigation">
                 <li class="aside-navigation__item">
                   <a href="blank.html">Новые поступления</a>
                 </li>
@@ -46,7 +48,7 @@
                   <a href="blank.html">Распродажа</a>
                 </li>
               </ul>
-              <p class="page-navigation__delivery-info visually-hidden">
+              <p class="page-navigation__delivery-info">
                 Бесплатная доставка по России
               </p>
             </div>
@@ -100,12 +102,18 @@
             </fieldset>
             <fieldset class="form__name">
               <legend class="form__legend">ФИО</legend>
-              <label for="first-name">Имя:</label>
-              <input class="form__input-text" type="text" name="name" id="first-name" placeholder="Введите ваше имя*" required>
-              <label for="last-name">Фамилия:</label>
-              <input class="form__input-text" type="text" name="name" id="last-name" placeholder="Укажите фамилию*" required>
-              <label for="father-name">Отчество:</label>
-              <input class="form__input-text" type="text" name="name" id="father-name" placeholder="Отчество, если желаете">
+              <div class="form__name-wrapper">
+                <label for="first-name">Имя:</label>
+                <input class="form__input-text" type="text" name="name" id="first-name" placeholder="Введите ваше имя*" required>
+              </div>
+              <div class="form__name-wrapper">
+                <label for="last-name">Фамилия:</label>
+                <input class="form__input-text" type="text" name="name" id="last-name" placeholder="Укажите фамилию*" required>
+              </div>
+              <div class="form__name-wrapper">
+                <label for="father-name">Отчество:</label>
+                <input class="form__input-text" type="text" name="name" id="father-name" placeholder="Отчество, если желаете">
+              </div>
             </fieldset>
             <fieldset class="form__telephone">
               <legend class="form__legend">Тел</legend>
@@ -138,7 +146,7 @@
         </main>
         <footer class="page-footer">
           <div class="page-footer__wrapper">
-            <img class="page-footer__logo visually-hidden" src="img/logo-footer.svg" width="102" height="34" alt="Магазин «Мишка»">
+            <img class="page-footer__logo" src="img/logo-footer.svg" width="102" height="34" alt="Магазин «Мишка»">
             <section class="page-footer__social social">
               <h2 class="visually-hidden">Социальные сети</h2>
               <ul class="social__list">

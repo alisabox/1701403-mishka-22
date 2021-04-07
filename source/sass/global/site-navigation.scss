@@ -26,7 +26,8 @@
   }
 }
 
-.site-navigation a {
+.site-navigation a,
+.site-navigation .current-page {
   @media (min-width: $tablet-width) {
     min-height: 65px;
     padding: 0;
