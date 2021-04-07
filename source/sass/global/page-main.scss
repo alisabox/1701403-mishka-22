@@ -1,7 +1,17 @@
 .page-main {
+  position: relative;
+  z-index: -1;
   background-image: url("../img/hero-mobile@2x.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: -65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -44px;
+  }
 }
 
 .page-main__slogan {
