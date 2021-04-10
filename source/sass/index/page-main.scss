@@ -1,16 +1,14 @@
 .page-main {
   position: relative;
-  z-index: -1;
-  background-image: url("../img/hero-mobile@2x.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     top: -65px;
+    margin-bottom: -9px;
   }
 
   @media (min-width: $desktop-width) {
-    top: -44px;
+    top: -42px;
+    margin-bottom: -43px;
   }
 }
 
@@ -23,20 +21,24 @@
   word-break: break-word;
   padding-top: 73px;
   margin: 0;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
+  background-image: url("../img/hero-mobile@2x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
 
   @include padding-left-right;
 
   @media (min-width: $tablet-width) {
-    padding-top: 154px;
-    margin-bottom: 372px;
+    padding-top: 155px;
+    padding-bottom: 491px;
     font-size: 43px;
     line-height: 50px;
+    background-image: url("../img/hero-desktop.jpg");
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 157px;
-    margin-bottom: 355px;
+    padding-bottom: 474px;
     font-size: 53px;
     line-height: 57px;
   }

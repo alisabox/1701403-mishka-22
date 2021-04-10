@@ -3,7 +3,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 89px;
+    min-height: 88px;
     margin-right: 50px;
     align-items: center;
   }
@@ -17,7 +17,7 @@
   }
 }
 
-.user-navigation span {
+.user-navigation__search span {
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -29,29 +29,70 @@
 
 .user-navigation a {
   @media (min-width: $tablet-width) {
-    height: 89px;
+    min-height: 88px;
     border-left: 1px solid $light-grey-border;
   }
 }
 
-.user-navigation__search::before {
-  content: url("../img/search.svg");
-  position: absolute;
-  top: 32px;
-  left: 32px;
+.user-navigation__search {
+  position: relative;
+  min-width: 83px;
+}
 
-  @media (min-width: $tablet-width) {
-    top: 36px;
+.user-navigation__search svg {
+  position: absolute;
+  left: 33px;
+  opacity: 0.2;
+}
+
+.user-navigation__search:hover {
+  & svg {
+    opacity: 1;
+    fill: $light-green;
+  }
+
+  & span {
+    opacity: 0.6;
   }
 }
 
-.user-navigation__cart::before {
-  content: url("../img/cart.svg");
-  position: absolute;
-  top: 31px;
-  left: 30px;
+.user-navigation__search:active {
+  & svg,
+  & span {
+    opacity: 0.3;
+  }
+}
+
+.user-navigation__cart a {
+  position: relative;
+  padding-left: 76px;
+  justify-self: flex-end;
 
   @media (min-width: $tablet-width) {
-    top: 35px;
+    padding-left: 85px;
+  }
+}
+
+.user-navigation__cart svg {
+  position: absolute;
+  left: 31px;
+  opacity: 0.2;
+}
+
+.user-navigation__cart:hover {
+  & svg {
+    opacity: 1;
+    fill: $light-green;
+  }
+
+  & span {
+    opacity: 0.6;
+  }
+}
+
+.user-navigation__cart:active {
+  & svg,
+  & span {
+    opacity: 0.3;
   }
 }

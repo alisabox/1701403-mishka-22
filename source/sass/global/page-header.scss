@@ -1,5 +1,6 @@
 .page-header {
   z-index: 1;
+  border-bottom: 1px solid $light-grey-border;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -9,10 +10,10 @@
 }
 
 .page-header__logo {
-  display: flex;
-  justify-content: center;
+  display: block;
+  width: 130px;
   height: 78px;
-  border-bottom: 1px solid $light-grey-border;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     align-self: flex-start;

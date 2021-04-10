@@ -11,11 +11,21 @@
   }
 }
 
+.aside-navigation__item {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .aside-navigation__item a {
-  min-width: 221px;
+  min-width: 186px;
   min-height: fit-content;
   padding: 0;
-  padding-top: 20px;
+  padding-top: 18px;
 }
 
 .aside-navigation__item:not(:first-child) {

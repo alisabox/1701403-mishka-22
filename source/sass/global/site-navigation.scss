@@ -9,6 +9,14 @@
 }
 
 .site-navigation__item {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $desktop-width) {
     border-right: 1px solid $light-grey-border;
   }
@@ -36,8 +44,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 89px;
+    min-height: 88px;
     min-width: 184px;
+    margin-right: 0;
     font-size: 17px;
   }
 }
