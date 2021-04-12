@@ -24,15 +24,13 @@
 }
 
 .button-order {
-  max-width: 292px;
-  margin-bottom: 36px;
-
   @media (min-width: $tablet-width) {
-    margin-bottom: 52px;
+    margin-right: 376px;
+    font-size: 17px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 73px;
+    max-width: 292px;
   }
 }
 
@@ -43,19 +41,25 @@
     position: absolute;
     right: 50px;
     top: 79px;
-    min-width: 175px;
+    min-width: 171px;
+    font-size: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 81px;
   }
 }
 
 .button-review {
-  outline: 1px solid $light-grey-border;
-  border: none;
-  background-color: $basic-white;
   min-width: 130px;
-  min-height: 52px;
+  min-height: 50px;
+  border: 1px solid $light-grey-border;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    outline: none;
+    min-width: 88px;
+    font-size: 17px;
+    border: none;
   }
 }
 
@@ -82,7 +86,8 @@
 
   @media (min-width: $tablet-width) {
     max-width: 226px;
-    margin-bottom: 57px;
+    margin-bottom: 0;
+    font-size: 17px;
   }
 
   @media (min-width: $desktop-width) {

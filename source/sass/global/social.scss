@@ -4,17 +4,22 @@
   padding: 0;
   display: flex;
   border-bottom: 1px solid $footer-divider;
-  min-height: 80px;
+  min-height: 79px;
   align-items: center;
   justify-content: center;
 
   @media (min-width: $tablet-width) {
+    min-height: 34px;
     border: none;
   }
 }
 
 .social__item {
   margin-right: 41px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 3px;
+  }
 }
 
 .social__item:last-child {

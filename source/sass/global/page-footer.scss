@@ -7,9 +7,10 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    min-height: 143px;
+    min-height: 34px;
     justify-content: space-between;
-    align-items: center;
+    padding-top: 51px;
+    padding-bottom: 58px;
 
     @include padding-tablet;
   }
