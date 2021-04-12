@@ -27,13 +27,14 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 101px;
-    margin-bottom: 54px;
+    margin-bottom: 68px;
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 99px;
+    padding-bottom: 94px;
+    margin-bottom: 118px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -51,6 +52,11 @@
     background-image: url("../img/zigzag-fill-desktop.svg");
     background-repeat: repeat-x;
   }
+
+  @media (min-width: $desktop-width) {
+    background-size: 100%;
+    bottom: -9px;
+  }
 }
 
 .page-form__description {
@@ -66,7 +72,7 @@
     @include padding-tablet;
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 13px;
+    margin-bottom: 28px;
   }
 
   @media (min-width: $desktop-width) {
