@@ -59,8 +59,13 @@
     width: 350px;
     top: 0;
     left: 0;
-    background-image: url("../img/review-background.jpg");
+    background-image: url("../img/review-background@1x.jpg");
     z-index: -1;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/review-background@2x.jpg");
+    background-size: auto 457px;
   }
 }
 
