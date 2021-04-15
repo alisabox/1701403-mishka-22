@@ -14,13 +14,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    margin: 0 50px 64px;
+    margin: 0 50px 62px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 346px;
-    margin: 0 50px 105px;
-    padding: 47px 57px 60px 763px;
+    margin: 0 50px 103px;
+    padding: 46px 57px 60px 761px;
   }
 }
 
@@ -60,7 +60,7 @@
     @media (min-width: $desktop-width) {
       position: relative;
       left: 0;
-      margin-bottom: 27px;
+      margin-bottom: 28px;
     }
   }
 }
@@ -68,10 +68,11 @@
 .production__video-wrapper {
   position: relative;
   margin-bottom: 35px;
+  background-image: url("img/video-mobile.jpg");
 
   @media (min-width: $tablet-width) {
     order: -1;
-    margin-bottom: 41px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -87,7 +88,20 @@
 .production__video {
   display: block;
   width: 100%;
-  max-height: 445px;
+  min-height: 150px;
+  max-height: 455px;
+  background: url("../img/video-mobile.jpg");
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    height: 455px;
+    background: url("../img/video-tablet.jpg");
+    background-size: cover;
+  }
+}
+
+video[poster] {
+  object-fit: fill;
 }
 
 .production__video-control {
@@ -142,6 +156,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 42px 46px;
+    font-size: 17px;
   }
 
   @media (min-width: $desktop-width) {

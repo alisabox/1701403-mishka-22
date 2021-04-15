@@ -29,13 +29,21 @@
   box-shadow: 0 6px 0 0 $basic-black, 0 12px 0 0 $basic-black;
 }
 
-@media (max-width: $mobile-width-only) {
-  .page-navigation--closed .page-navigation__wrapper {
+.page-navigation--closed .page-navigation__wrapper {
+  @media (max-width: $mobile-width-only) {
     display: none;
   }
+}
 
-  .page-navigation--nojs .page-navigation__toggle {
-    display: none;
+.page-navigation--nojs {
+  @media (max-width: $mobile-width-only) {
+    & .page-navigation__toggle {
+      display: none;
+    }
+
+    & .page-navigation__wrapper {
+      display: block;
+    }
   }
 }
 

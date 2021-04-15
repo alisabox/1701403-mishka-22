@@ -33,7 +33,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 128px;
+    padding-bottom: 96px;
+    margin-bottom: 129px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -50,5 +51,10 @@
     width: 100%;
     background-image: url("../img/zigzag-fill-desktop.svg");
     background-repeat: repeat-x;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: -8px;
+    background-size: 100%;
   }
 }

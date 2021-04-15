@@ -9,7 +9,7 @@
   }
 }
 
-.form fieldset {
+.form__fieldset {
   position: relative;
   margin: 0;
   padding: 30px 0;
@@ -100,7 +100,7 @@
 
 /* Form Type */
 
-.form .form__type {
+.form__type {
   padding-top: 37px;
   padding-bottom: 18px;
 
@@ -111,7 +111,7 @@
 }
 
 .form__type .form__item {
-  margin-bottom: 24px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
@@ -190,7 +190,7 @@
 /* Form Color */
 
 
-.form .form__color {
+.form__color {
   padding-top: 37px;
   padding-bottom: 29px;
 
@@ -316,7 +316,7 @@
 
 /* Form Name */
 
-.form .form__name {
+.form__name {
   padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
@@ -357,7 +357,7 @@
 
 /* Form Telephone */
 
-.form .form__telephone {
+.form__telephone {
   padding: 7px 0;
   margin-bottom: 28px;
 
@@ -387,7 +387,7 @@
 
 /* Form Email */
 
-.form .form__email {
+.form__email {
   padding: 6px 0;
   margin-bottom: 29px;
 
@@ -430,7 +430,7 @@
 
 /* Form Additional */
 
-.form .form__additional {
+.form__additional {
   padding-top: 21px;
   padding-bottom: 0;
   margin-bottom: 14px;
