@@ -1,13 +1,14 @@
-.modal--closed {
-  display: none;
-}
-
 .modal {
+  display: none;
   max-width: 566px;
   margin: 0 auto 50px;
   padding: 30px;
   box-shadow: 0 5px 10px $modal-shadow;
   color: $basic-dark-grey;
+}
+
+.modal--show {
+  display: block;
 }
 
 .modal__title {

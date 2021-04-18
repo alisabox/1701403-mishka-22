@@ -15,11 +15,13 @@
     <div class="page__body">
       <header class="page-header">
         <a class="page-header__logo" href="#">
-          <img class="page-header__logo-mobile" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
-          <img class="page-header__logo-tablet" src="img/mishka-logo-tablet.svg" width="113" height="46" alt="Магазин «Мишка»">
-          <img class="page-header__logo-desktop" src="img/mishka-logo-desktop.svg" width="149" height="72" alt="Магазин «Мишка»">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+            <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+          </picture>
         </a>
-        <nav class="page-navigation page-navigation--closed page-navigation--nojs">
+        <nav class="page-navigation page-navigation--nojs">
           <button class="page-navigation__toggle">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -102,12 +104,16 @@
                   <div>15 см</div>
                 </div>
               </div>
-            <img class="featured-item__image" src="img/triple-set-mobile.jpg" width="260" height="315" alt="Набор из трех вязаных корзинок разных размеров">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                <img class="featured-item__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Набор из трех вязаных корзинок разных размеров">
+              </picture>
             <p class="featured-item__price">Цена: 990 руб.</p>
             <a class="button button-order" href="#">Заказать</a>
           </div>
         </section>
-        <section class="modal modal--closed">
+        <section class="modal">
           <h2 class="modal__title">Добавить в корзину</h2>
           <form class="modal__form" method="get" action="https://echo.htmlacademy.ru/">
             <fieldset class="modal__size">
@@ -227,13 +233,7 @@
       navMain.classList.remove('page-navigation--nojs');
 
       navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('page-navigation--closed')) {
-          navMain.classList.remove('page-navigation--closed');
-          navMain.classList.add('page-navigation--open');
-        } else {
-          navMain.classList.add('page-navigation--closed');
-          navMain.classList.remove('page-navigation--open');
-        }
+        navMain.classList.toggle('page-navigation--active');
       });
 
       /* Modal */
@@ -241,12 +241,12 @@
       var buttonOrder = document.querySelector('.button-order');
 
       buttonOrder.addEventListener('click', function(evt) {
-        if (modal.classList.contains('modal--closed')) {
+        if (modal.classList.contains('modal--show')) {
           evt.preventDefault();
-          modal.classList.remove('modal--closed');
+          modal.classList.remove('modal--show');
         } else {
           evt.preventDefault();
-          modal.classList.add('modal--closed');
+          modal.classList.add('modal--show');
         }
       });
     </script>

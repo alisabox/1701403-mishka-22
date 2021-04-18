@@ -139,9 +139,15 @@
   width: 100%;
   min-height: 454px;
   margin-bottom: 42px;
-  background-image: url("../img/map-mobile@1x.jpg");
+  background-image: url("../img/map-tablet@1x.jpg");
   background-position: top center;
+  background-size: fill;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-tablet@2x.jpg");
+    background-size: auto 457px;
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 457px;
