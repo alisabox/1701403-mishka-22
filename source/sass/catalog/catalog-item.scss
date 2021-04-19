@@ -48,32 +48,6 @@
   }
 }
 
-.catalog-item__image--mobile {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.catalog-item__image--tablet {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.catalog-item__image--desktop {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
-}
-
 .catalog-item__details {
   padding: 27px 28px;
 
