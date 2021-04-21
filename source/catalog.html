@@ -15,11 +15,13 @@
     <div class="page__body">
       <header class="page-header">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-mobile" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
-          <img class="page-header__logo-tablet" src="img/mishka-logo-tablet.svg" width="113" height="46" alt="Магазин «Мишка»">
-          <img class="page-header__logo-desktop" src="img/mishka-logo-desktop.svg" width="149" height="72" alt="Магазин «Мишка»">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+            <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+          </picture>
         </a>
-        <nav class="page-navigation page-navigation--closed page-navigation--nojs">
+        <nav class="page-navigation page-navigation--nojs">
           <button class="page-navigation__toggle">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -71,9 +73,11 @@
           <ul class="catalog__list">
             <li class="catalog-item">
               <a href="blank.html">
-                <img class="catalog-item__image catalog-item__image--mobile" src="img/catalog/photo-1-mobile.jpg" width="260" height="195" alt="Бело-голубой вязаный заяц">
-                <img class="catalog-item__image catalog-item__image--tablet" src="img/catalog/photo-1-tablet.jpg" width="334" height="334" alt="Бело-зеленая вязаная корзинка большого размера">
-                <img class="catalog-item__image catalog-item__image--desktop" src="img/catalog/photo-1-desktop.jpg" width="316" height="462" alt="Бело-зеленая вязаная корзинка большого размера">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
+                  <img class="catalog-item__image" src="img/catalog/photo-1-mobile.jpg" srcset="img/catalog/photo-1-mobile@2x.jpg 2x" width="260" height="195" alt="Бело-голубой вязаный заяц">
+                </picture>
               </a>
               <div class="catalog-item__details">
                 <h3 class="catalog-item__name"><a href="blank.html">Зайчик-попрыгайчик</a></h3>
@@ -92,9 +96,11 @@
             </li>
             <li class="catalog-item">
               <a href="blank.html">
-                <img class="catalog-item__image catalog-item__image--mobile" src="img/catalog/photo-2-mobile.jpg" width="260" height="195" alt="Бело-розовая вязаная корзинка небольшого размера">
-                <img class="catalog-item__image catalog-item__image--tablet" src="img/catalog/photo-2-tablet.jpg" width="334" height="334" alt="Бело-зеленая вязаная корзинка большого размера">
-                <img class="catalog-item__image catalog-item__image--desktop" src="img/catalog/photo-2-desktop.jpg" width="316" height="462" alt="Бело-зеленая вязаная корзинка большого размера">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
+                  <img class="catalog-item__image" src="img/catalog/photo-2-mobile.jpg" srcset="img/catalog/photo-2-mobile@2x.jpg 2x" width="260" height="195" alt="Бело-розовая вязаная корзинка небольшого размера">
+                </picture>
               </a>
               <div class="catalog-item__details">
                 <h3 class="catalog-item__name"><a href="blank.html">Корзинка для белья</a></h3>
@@ -113,9 +119,11 @@
             </li>
             <li class="catalog-item">
               <a href="blank.html">
-                <img class="catalog-item__image catalog-item__image--mobile" src="img/catalog/photo-3-mobile.jpg" width="260" height="195" alt="Бело-зеленая вязаная корзинка большого размера">
-                <img class="catalog-item__image catalog-item__image--tablet" src="img/catalog/photo-3-tablet.jpg" width="334" height="334" alt="Бело-зеленая вязаная корзинка большого размера">
-                <img class="catalog-item__image catalog-item__image--desktop" src="img/catalog/photo-3-desktop.jpg" width="316" height="462" alt="Бело-зеленая вязаная корзинка большого размера">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x">
+                  <img class="catalog-item__image" src="img/catalog/photo-3-mobile.jpg" srcset="img/catalog/photo-3-mobile@2x.jpg 2x" width="260" height="195" alt="Бело-зеленая вязаная корзинка большого размера">
+                </picture>
               </a>
               <div class="catalog-item__details">
                 <h3 class="catalog-item__name"><a href="blank.html">Большая корзинка<br>для игрушек</a></h3>
@@ -134,7 +142,7 @@
             </li>
           </ul>
         </section>
-        <section class="modal modal--closed">
+        <section class="modal">
           <h2 class="modal__title">Добавить в корзину</h2>
           <form class="modal__form" method="get" action="https://echo.htmlacademy.ru/">
             <fieldset class="modal__size">
@@ -225,29 +233,21 @@
       navMain.classList.remove('page-navigation--nojs');
 
       navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('page-navigation--closed')) {
-          navMain.classList.remove('page-navigation--closed');
-          navMain.classList.add('page-navigation--open');
-        } else {
-          navMain.classList.add('page-navigation--closed');
-          navMain.classList.remove('page-navigation--open');
-        }
+        navMain.classList.toggle('page-navigation--active');
       });
 
       /* Modal */
       var modal = document.querySelector('.modal');
-      var buttonAdd = document.querySelectorAll('.catalog-item__add');
+      var buttonOrder = document.querySelector('.button-order');
 
-      buttonAdd.forEach(buttonAdd => {
-        buttonAdd.addEventListener('click', function(evt) {
-          if (modal.classList.contains('modal--closed')) {
-            evt.preventDefault();
-            modal.classList.remove('modal--closed');
-          } else {
-            evt.preventDefault();
-            modal.classList.add('modal--closed');
-          }
-        })
+      buttonOrder.addEventListener('click', function(evt) {
+        if (modal.classList.contains('modal--show')) {
+          evt.preventDefault();
+          modal.classList.remove('modal--show');
+        } else {
+          evt.preventDefault();
+          modal.classList.add('modal--show');
+        }
       });
     </script>
   </body>

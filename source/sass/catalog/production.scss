@@ -68,7 +68,6 @@
 .production__video-wrapper {
   position: relative;
   margin-bottom: 35px;
-  background-image: url("img/video-mobile.jpg");
 
   @media (min-width: $tablet-width) {
     order: -1;
@@ -93,10 +92,18 @@
   background: url("../img/video-mobile.jpg");
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     height: 455px;
     background: url("../img/video-tablet.jpg");
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+    }
   }
 }
 
