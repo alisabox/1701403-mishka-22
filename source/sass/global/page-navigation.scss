@@ -60,12 +60,25 @@
     display: flex;
     justify-content: space-between;
     border-top: 1px solid $light-grey-border;
+    background-color: $grey-background;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr max-content;
     grid-template-rows: min-content min-content;
+    background-color: transparent;
+  }
+}
+
+.page__body--catalog .page-navigation__wrapper,
+.page__body--form .page-navigation__wrapper {
+  @media (min-width: $tablet-width) {
+    background-color: $decoration-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
   }
 }
 
@@ -73,11 +86,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 
 .page-navigation__list li {
@@ -105,14 +113,18 @@
   padding-right: 50px;
   font-size: 15px;
   color: $basic-dark-grey;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    align-self: center;
-    justify-self: flex-end;
-  }
+  background-color: $grey-background;
 
   @media (min-width: $desktop-width) {
     padding-top: 20px;
+    display: flex;
+    align-self: stretch;
+    justify-self: stretch;
+    justify-content: flex-end;
   }
+}
+
+.page__body--catalog .page-navigation__delivery-info,
+.page__body--form .page-navigation__delivery-info {
+  background-color: $decoration-grey;
 }

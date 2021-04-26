@@ -173,7 +173,7 @@
             <dt class="contacts__adress">адрес:</dt>
             <dd class="contacts__text">г. Санкт-Петербург<br>ул.&nbsp;Большая&nbsp;Конюшенная<br>д. 19/8, офис 101</dd>
           </dl>
-          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sjp!4v1616842731491!5m2!1sru!2sjp" style="border: 0;" loading="lazy" height="454" allowfullscreen title="Карта как добраться до магазина"></iframe>
+          <div class="contacts__map" id="map" aria-label="Карта как добраться до магазина"></div>
           <a class="button button-send-email" href="blank.html">Напишите нам</a>
         </section>
       </main>
@@ -219,6 +219,7 @@
         </div>
       </footer>
     </div>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=358e6a8a-6992-4682-a97c-7ec96d004e36" type="text/javascript"></script>
     <script>
       /* Mobile menu */
       var navMain = document.querySelector('.page-navigation');
@@ -253,6 +254,29 @@
           modal.classList.remove('modal--show');
         }
       };
+
+      /* Map marker */
+      ymaps.ready(function () {
+        var myMap = new ymaps.Map('map', {
+          center: [59.938823968761554, 30.323047398537284],
+          zoom: 17
+        }, {
+          searchControlProvider: 'yandex#search'
+        }),
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+          hintContent: 'Магазин "Мишка"'
+        }, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/map-pin.svg',
+          iconImageSize: [67, 100],
+          iconImageOffset: [-17, -100]
+        });
+        myMap.geoObjects
+          .add(myPlacemark);
+      });
     </script>
   </body>
 </html>

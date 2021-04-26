@@ -1,9 +1,14 @@
 .site-navigation {
   @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content;
+    column-gap: 35px;
     padding-left: 50px;
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 184px 184px;
+    column-gap: 35px;
     border-bottom: 1px solid $light-grey-border;
   }
 }
@@ -22,12 +27,6 @@
   }
 }
 
-.site-navigation__item:not(:first-child) {
-  @media (min-width: $desktop-width) {
-    padding-left: 35px;
-  }
-}
-
 .site-navigation__item:nth-child(even) {
   @media (min-width: $desktop-width) {
     border: none;
@@ -39,7 +38,6 @@
   @media (min-width: $tablet-width) {
     min-height: 65px;
     padding: 0;
-    margin-right: 36px;
     font-size: 15px;
   }
 
