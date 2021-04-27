@@ -1,6 +1,8 @@
 .button {
-  min-height: 48px;
+  min-height: 52px;
   border: 2px solid $basic-dark-grey;
+  padding: 5px;
+  box-sizing: border-box;
   text-decoration: none;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: bold;
@@ -10,6 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   background-color: $basic-white;
 }
 
@@ -41,7 +44,7 @@
     position: absolute;
     right: 50px;
     top: 79px;
-    min-width: 171px;
+    min-width: 175px;
     font-size: 17px;
   }
 
@@ -81,11 +84,11 @@
 }
 
 .button-send-email {
-  max-width: 256px;
+  max-width: 260px;
   margin: 0 auto 39px;
 
   @media (min-width: $tablet-width) {
-    max-width: 226px;
+    max-width: 230px;
     margin-bottom: 0;
     font-size: 17px;
   }

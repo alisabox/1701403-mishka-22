@@ -1,3 +1,4 @@
+
 .contacts {
   position: relative;
 
@@ -21,16 +22,15 @@
     margin-bottom: 49px;
     font-size: 43px;
     line-height: 50px;
-
-    @include padding-tablet;
+    padding: 0 130px 0 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 224px;
-    padding-top: 78px;
+    padding: 78px 600px 0 224px;
     margin-bottom: 33px;
     font-size: 53px;
     line-height: 57px;
+    word-break: break-word;
   }
 }
 
@@ -66,9 +66,9 @@
   @include padding-left-right;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 49px;
+    grid-template-columns: max-content 1fr max-content 1fr;
+    row-gap: 10px;
+    margin-bottom: 39px;
     font-size: 17px;
 
     @include padding-tablet;

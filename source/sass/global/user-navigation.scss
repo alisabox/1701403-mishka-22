@@ -4,13 +4,19 @@
     top: 0;
     right: 0;
     min-height: 88px;
+    max-height: 88px;
     margin-right: 50px;
+    margin-left: 250px;
+    display: grid;
+    grid-template-columns: 82px 1fr;
+    overflow: hidden;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
+    max-height: none;
     position: relative;
-    justify-self: flex-end;
+    grid-template-columns: 82px 270px;
     border-bottom: 1px solid $light-grey-border;
     margin: 0;
     padding-right: 50px;
@@ -38,6 +44,8 @@
 .user-navigation__search {
   position: relative;
   min-width: 83px;
+  display: flex;
+  align-self: stretch;
 }
 
 .user-navigation__search svg {
@@ -62,6 +70,11 @@
   & span {
     opacity: 0.3;
   }
+}
+
+.user-navigation__cart {
+  display: flex;
+  align-self: stretch;
 }
 
 .user-navigation__cart a,

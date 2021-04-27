@@ -40,6 +40,7 @@
 .reviews__wrapper {
   @include padding-left-right;
   position: relative;
+  // padding-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     @include padding-tablet;
@@ -79,6 +80,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 83px;
+    padding-right: 190px;
     margin-bottom: 38px;
     font-size: 43px;
     line-height: 50px;
