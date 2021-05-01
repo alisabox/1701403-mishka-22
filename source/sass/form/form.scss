@@ -21,6 +21,12 @@
     padding: 50px 0;
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
 }
 
 .form__legend {
@@ -481,6 +487,14 @@
 
 /* Footnote */
 
+.form__footer {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 1150px;
+    margin: 0 auto;
+  }
+}
+
 .form__footnote {
   margin: 0;
   margin-bottom: 30px;
@@ -530,9 +544,7 @@
   }
 }
 
-.form__color,
-.form__telephone,
-.form__email {
+.form__wrapper {
   @media (min-width: $tablet-width) {
     background-color: $decoration-grey;
   }

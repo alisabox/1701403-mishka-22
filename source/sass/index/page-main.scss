@@ -52,3 +52,11 @@
     line-height: 57px;
   }
 }
+
+.page-main__slogan-text {
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 1050px;
+    margin: 0 auto;
+  }
+}

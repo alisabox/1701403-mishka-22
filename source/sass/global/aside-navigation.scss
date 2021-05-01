@@ -3,19 +3,12 @@
   padding-left: 50px;
   font-size: 15px;
   line-height: 24px;
+  background-color: transparent;
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 184px 184px;
     column-gap: 35px;
-    background-color: $grey-background;
-  }
-}
-
-.page__body--catalog .aside-navigation,
-.page__body--form .aside-navigation {
-  @media (min-width: $desktop-width) {
-    background-color: $decoration-grey;
   }
 }
 

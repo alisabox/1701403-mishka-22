@@ -1,9 +1,16 @@
 
 .contacts {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 105px;
+  }
+}
+
+.contacts__wrapper {
   position: relative;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 105px;
+    width: 1150px;
+    margin: 0 auto;
   }
 }
 

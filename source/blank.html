@@ -9,62 +9,64 @@
     <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page">
     <div class="page__body">
       <header class="page-header">
-        <a class="page-header__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
-            <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
-          </picture>
-        </a>
-        <nav class="page-navigation page-navigation--nojs">
-          <button class="page-navigation__toggle">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <div class="page-navigation__wrapper">
-            <ul class="page-navigation__list site-navigation">
-              <li class="site-navigation__item">
-                <a href="catalog.html">Каталог товаров</a>
-              </li>
-              <li class="site-navigation__item">
-                <a href="form.html">Вязание на заказ</a>
-              </li>
-            </ul>
-            <ul class="page-navigation__list user-navigation">
-                <li class="user-navigation__search">
-                  <span class="current-page">
-                    <svg width="18" height="18">
-                      <use xlink:href="img/sprite.svg#search"></use>
-                    </svg>
-                    <span>Поиск по сайту</span>
-                  </span>
+        <div class="page-header__wrapper">
+          <a class="page-header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+              <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+            </picture>
+          </a>
+          <nav class="page-navigation page-navigation--nojs">
+            <button class="page-navigation__toggle">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="page-navigation__wrapper">
+              <ul class="page-navigation__list site-navigation">
+                <li class="site-navigation__item">
+                  <a href="catalog.html">Каталог товаров</a>
                 </li>
-                <li class="user-navigation__cart">
-                  <span class="current-page">
-                    <svg width="21" height="18">
-                      <use xlink:href="img/sprite.svg#cart"></use>
-                    </svg>
-                    <span>Корзина: пока пуста</span>
-                  </span>
+                <li class="site-navigation__item">
+                  <a href="form.html">Вязание на заказ</a>
                 </li>
-            </ul>
-            <ul class="page-navigation__list aside-navigation">
-              <li class="aside-navigation__item">
-                <span class="current-page">Новые поступления</span>
-              </li>
-              <li class="aside-navigation__item">
-                <span class="current-page">Распродажа</span>
-              </li>
-            </ul>
-            <p class="page-navigation__delivery-info">
-              Бесплатная доставка по России
-            </p>
-          </div>
-        </nav>
+              </ul>
+              <ul class="page-navigation__list user-navigation">
+                  <li class="user-navigation__search">
+                    <a href="blank.html">
+                      <svg width="18" height="18">
+                        <use xlink:href="img/sprite.svg#search"></use>
+                      </svg>
+                      <span>Поиск по сайту</span>
+                    </a>
+                  </li>
+                  <li class="user-navigation__cart">
+                    <a href="blank.html">
+                      <svg width="21" height="18">
+                        <use xlink:href="img/sprite.svg#cart"></use>
+                      </svg>
+                      <span>Корзина: пока пуста</span>
+                    </a>
+                  </li>
+              </ul>
+              <ul class="page-navigation__list aside-navigation">
+                <li class="aside-navigation__item">
+                  <a href="blank.html">Новые поступления</a>
+                </li>
+                <li class="aside-navigation__item">
+                  <a href="blank.html">Распродажа</a>
+                </li>
+              </ul>
+              <p class="page-navigation__delivery-info">
+                Бесплатная доставка по России
+              </p>
+            </div>
+          </nav>
+        </div>
       </header>
       <main class="page-blank">
         <h1>Здесь пока ничего нет, ждите обновлений</h1>
@@ -111,5 +113,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>

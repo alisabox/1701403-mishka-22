@@ -1,14 +1,26 @@
 .about {
-  @include padding-left-right;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    @include padding-tablet;
     margin-bottom: 83px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 89px;
+  }
+}
+
+.about__wrapper {
+  @include padding-left-right;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    @include padding-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    margin: 0 auto;
   }
 }
 
@@ -30,7 +42,6 @@
   @media (min-width: $desktop-width) {
     height: 23px;
     background-size: 1050px;
-    background-repeat: no-repeat;
     background-position: top center;
   }
 }
