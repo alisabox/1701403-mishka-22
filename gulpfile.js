@@ -64,10 +64,6 @@ const watcher = () => {
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
-exports.default = gulp.series(
-  styles, server, watcher
-);
-
 // HTML
 
 const html = () => {
@@ -104,7 +100,7 @@ const optimizeImages = () => {
 
 exports.optimizeImages = optimizeImages;
 
-const copyImages = () => {
+const copyImages = async () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(gulp.dest("build/img"))
 }
@@ -136,17 +132,17 @@ exports.sprite = sprite;
 
 // Copy
 
-const copy = (done) => {
+const copy = async () => {
   gulp.src([
     "source/css/normalize.css",
     "source/*.ico",
     "source/*.webmanifest",
     "source/fonts/*.{woff2,woff}",
   ], {
-    base: "source"
+    base: "source",
+    allowEmpty: true
   })
     .pipe(gulp.dest("build"))
-  done();
 }
 
 exports.copy = copy;
