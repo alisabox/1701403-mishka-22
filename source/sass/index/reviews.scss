@@ -32,7 +32,6 @@
   @media (min-width: $desktop-width) {
     height: 23px;
     background-size: 1050px;
-    background-repeat: no-repeat;
     background-position: top center;
   }
 }
@@ -40,15 +39,17 @@
 .reviews__wrapper {
   @include padding-left-right;
   position: relative;
-  // padding-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     @include padding-tablet;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 50px;
+    width: 1150px;
+    margin: 0 auto;
+    // margin-left: 50px;
     padding-left: 174px;
+    box-sizing: border-box;
   }
 }
 

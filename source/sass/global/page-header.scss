@@ -1,11 +1,21 @@
 .page-header {
+  width: 100%;
   z-index: 1;
+}
+
+.page-header__wrapper {
+  position: relative;
   border-bottom: 1px solid $light-grey-border;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    margin: 0 auto;
   }
 }
 
@@ -57,10 +67,10 @@
   }
 }
 
-.page-header__logo:hover {
+:not(.page-header__logo--main-page).page-header__logo:hover {
   opacity: 0.6;
 }
 
-.page-header__logo:active {
+:not(.page-header__logo--main-page).page-header__logo:active {
   opacity: 0.3;
 }

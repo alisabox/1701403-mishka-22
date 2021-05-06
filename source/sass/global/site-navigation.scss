@@ -14,16 +14,18 @@
 }
 
 .site-navigation__item {
+  @media (min-width: $desktop-width) {
+    border-right: 1px solid $light-grey-border;
+  }
+}
+
+.site-navigation__item a {
   &:hover {
     opacity: 0.6;
   }
 
   &:active {
     opacity: 0.3;
-  }
-
-  @media (min-width: $desktop-width) {
-    border-right: 1px solid $light-grey-border;
   }
 }
 

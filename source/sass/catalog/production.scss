@@ -18,9 +18,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1050px;
     min-height: 346px;
-    margin: 0 50px 103px;
+    margin: 0 auto 103px;
     padding: 46px 57px 60px 761px;
+    box-sizing: border-box;
   }
 }
 

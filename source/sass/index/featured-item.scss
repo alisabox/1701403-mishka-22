@@ -1,29 +1,33 @@
 .featured-item {
-  @include padding-left-right;
+  width: 100%;
   margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-    @include padding-tablet;
     margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 224px;
     margin-bottom: 73px;
   }
 }
 
 .featured-item__wrapper {
   position: relative;
+  margin: 0 30px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     min-height: 505px;
+    margin: 0 50px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 636px;
+    width: 1050px;
+    margin: 0 auto;
+    padding-left: 175px;
+    box-sizing: border-box;
   }
 }
 
@@ -72,7 +76,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: -143px;
+    left: 32px;
     top: 69px;
     margin: 0;
   }
