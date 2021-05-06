@@ -290,6 +290,10 @@
   border-bottom: 2px solid $basic-black;
   color: $basic-dark-grey;
 
+  &:required {
+    box-shadow: none;
+  }
+
   &:hover,
   &:focus {
     border-color: $light-green;
@@ -314,10 +318,15 @@
 .form textarea::placeholder {
   line-height: 18px;
   color: rgba($basic-black, 0.3);
+  opacity: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
   }
+}
+
+.form input::placeholder {
+  line-height: 46px;
 }
 
 /* Form Name */
