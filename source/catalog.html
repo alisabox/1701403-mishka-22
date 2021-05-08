@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff" crossorigin>
     <link rel="icon" href="favicon-32.ico">
     <link rel="icon" href="img/favicons/favicon-152.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
@@ -37,7 +41,7 @@
               </ul>
               <ul class="page-navigation__list user-navigation">
                   <li class="user-navigation__search">
-                    <a href="blank.html">
+                    <a href="blank.html" aria-label="Поиск по сайту">
                       <svg width="18" height="18">
                         <use xlink:href="img/sprite.svg#search"></use>
                       </svg>
@@ -91,7 +95,7 @@
                 <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
                 <div class="catalog-item__bottom">
                   <p class="catalog-item__price">1 200 руб.</p>
-                  <a class="catalog-item__add" href="#">
+                  <a class="catalog-item__add" href="#" aria-label="Добавить в корзину">
                     <svg width="21" height="18" fill="currentColor">
                       <use xlink:href="img/sprite.svg#cart"></use>
                     </svg>
@@ -115,7 +119,7 @@
                 <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
                 <div class="catalog-item__bottom">
                   <p class="catalog-item__price">690 руб.</p>
-                  <a class="catalog-item__add" href="#">
+                  <a class="catalog-item__add" href="#" aria-label="Добавить в корзину">
                     <svg width="21" height="18" fill="currentColor">
                       <use xlink:href="img/sprite.svg#cart"></use>
                     </svg>
@@ -139,7 +143,7 @@
                 <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
                 <div class="catalog-item__bottom">
                   <p class="catalog-item__price">1 500 руб.</p>
-                  <a class="catalog-item__add" href="#">
+                  <a class="catalog-item__add" href="#" aria-label="Добавить в корзину">
                     <svg width="21" height="18" fill="currentColor">
                       <use xlink:href="img/sprite.svg#cart"></use>
                     </svg>
@@ -157,20 +161,20 @@
                 <legend class="modal__legend">Выберите размер:</legend>
                 <ul class="modal__list">
                   <li class="modal__item">
-                    <input class="visually-hidden modal__input" type="radio" name="featured-item__size" id="s-size" value="s-size" checked>
+                    <input class="visually-hidden modal__input" type="radio" name="featured-item__size" id="s-size" value="s-size" aria-label="Размер S" checked>
                     <label for="s-size">S</label>
                   </li>
                   <li class="modal__item">
-                    <input class="visually-hidden modal__input" type="radio" name="featured-item__size" id="m-size" value="m-size">
+                    <input class="visually-hidden modal__input" type="radio" name="featured-item__size" id="m-size" value="m-size" aria-label="Размер M">
                     <label for="m-size">M</label>
                   </li>
                   <li class="modal__item">
-                    <input class="visually-hidden modal__input" type="radio" name="featured-item__size" id="l-size" value="l-size">
+                    <input class="visually-hidden modal__input" type="radio" name="featured-item__size" id="l-size" value="l-size" aria-label="Размер L">
                     <label for="l-size">L</label>
                   </li>
                 </ul>
               </fieldset>
-              <button class="modal__button-submit">Добавить</button>
+              <button type="submit" class="modal__button-submit" aria-label="Добавить в корзину">Добавить</button>
             </form>
           </div>
         </section>
@@ -178,7 +182,7 @@
           <h2 class="production__title">Процесс производства</h2>
           <div class="production__video-wrapper">
             <video class="production__video" preload="none"></video>
-            <button class="production__video-control"></button>
+            <button class="production__video-control" aria-label="Начать проигрывание видео"></button>
           </div>
           <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <a class="button production__order" href="#">Сделать заказ</a>

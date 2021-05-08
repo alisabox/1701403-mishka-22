@@ -1,5 +1,15 @@
+.page-blank {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    top: -44px;
+    margin-bottom: -44px;
+    border-top: 1px solid $light-grey-border;
+  }
+}
+
 .page-blank h1 {
-  margin: 45px auto;
+  margin: 145px auto;
   text-align: center;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: bold;
