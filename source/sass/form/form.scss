@@ -311,6 +311,7 @@
     margin-left: 219px;
     margin-right: 50px;
     padding-left: 18px;
+    font-size: 19px;
   }
 }
 
@@ -474,6 +475,7 @@
   padding: 17px;
   border: 2px solid $basic-black;
   font-family: inherit;
+  line-height: 18px;
   resize: none;
 
   &:hover,
@@ -486,6 +488,7 @@
     width: auto;
     margin-left: 219px;
     margin-right: 50px;
+    font-size: 19px;
   }
 
   @media (min-width: $desktop-width) {
