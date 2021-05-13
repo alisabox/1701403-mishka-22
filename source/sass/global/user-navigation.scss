@@ -37,6 +37,7 @@
   @media (min-width: $tablet-width) {
     min-height: 88px;
     border-left: 1px solid $light-grey-border;
+    outline-offset: -1px;
   }
 }
 

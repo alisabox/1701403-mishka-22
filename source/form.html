@@ -140,16 +140,16 @@
           <div class="form__wrapper">
             <fieldset class="form__fieldset form__telephone">
               <legend class="form__legend">Тел</legend>
-              <input class="form__input-text form__input-text--tel" type="tel" name="telephone" id="telephone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required maxlength="16">
+              <input class="form__input-text form__input-text--tel" type="tel" name="telephone" id="telephone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="^[0-9-+\s()]*$" required minlength="11" maxlength="16">
               <svg width="25" height="24">
-                <use xlink:href="img/sprite.svg#tel"></use>
+                <use xlink:href="img/sprite.svg#phone"></use>
               </svg>
             </fieldset>
             <fieldset class="form__fieldset form__email">
               <legend class="form__legend">E-mail</legend>
-              <input class="form__input-text form__input-text--email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+              <input class="form__input-text form__input-text--email" type="email" name="email" id="email" placeholder="Ваш Email*" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
               <svg width="32" height="21">
-                <use xlink:href="img/sprite.svg#email"></use>
+                <use xlink:href="img/sprite.svg#mail"></use>
               </svg>
             </fieldset>
           </div>
