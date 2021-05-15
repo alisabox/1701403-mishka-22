@@ -12,7 +12,6 @@
     <link rel="icon" href="img/favicons/favicon-152.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=358e6a8a-6992-4682-a97c-7ec96d004e36" type="text/javascript"></script>
   </head>
@@ -190,7 +189,9 @@
               <dt class="contacts__adress">адрес:</dt>
               <dd class="contacts__text">г. Санкт-Петербург<br>ул.&nbsp;Большая&nbsp;Конюшенная<br>д. 19/8, офис 101</dd>
             </dl>
-            <div class="contacts__map" id="map" aria-label="Карта как добраться до магазина"></div>
+            <div class="contacts__map-wrapper">
+              <div class="contacts__map" id="map" aria-label="Карта как добраться до магазина"></div>
+            </div>
             <a class="button button-send-email" href="blank.html">Напишите нам</a>
           </div>
         </section>

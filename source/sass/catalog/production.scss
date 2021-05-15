@@ -107,6 +107,14 @@
       background-image: url("../img/video-tablet@2x.jpg");
     }
   }
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/video-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-desktop@2x.jpg");
+    }
+  }
 }
 
 video[poster] {
