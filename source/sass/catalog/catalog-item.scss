@@ -1,5 +1,4 @@
 .catalog-item {
-  border: 1px solid $footer-divider;
   margin-bottom: 28px;
 
   &:hover {
@@ -50,6 +49,7 @@
 
 .catalog-item__details {
   padding: 27px 28px;
+  border: 1px solid $footer-divider;
 
   @media (min-width: $tablet-width) {
     display: flex;
