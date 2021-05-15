@@ -1,5 +1,6 @@
 .page-main {
   position: relative;
+  display: block;
 
   @media (min-width: $tablet-width) {
     top: -65px;
@@ -55,6 +56,8 @@
 }
 
 .page-main__slogan-text {
+  font-weight: bolder;
+
   @media (min-width: $desktop-width) {
     display: block;
     width: 1050px;
