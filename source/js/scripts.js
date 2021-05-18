@@ -23,9 +23,9 @@ if (buttonAdd) {
 };
 
 if (buttonOrder) {
-    buttonOrder.addEventListener('click', function(evt) {
-    evt.preventDefault();
-    modal.classList.add('modal--show');
+  buttonOrder.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  modal.classList.add('modal--show');
   })
 };
 
@@ -68,4 +68,39 @@ if (map) {
     myMap.geoObjects
       .add(myPlacemark);
     })
+};
+
+// Reviews
+
+let reviews = document.querySelector('.reviews');
+
+if (reviews) {
+  let review = reviews.querySelectorAll('.reviews__item');
+  let nextReview = reviews.querySelector('.button-review--next');
+  let previousReview = reviews.querySelector('.button-review--previous');
+  let slideIndex = 0;
+  nextReview.addEventListener('click', function() {
+    if (review[review.length-1].classList.contains('reviews__item--current')) {
+      review[review.length-1].classList.remove('reviews__item--current');
+      review[0].classList.add('reviews__item--current');
+      slideIndex = 0;
+    }
+    else {
+      review[slideIndex].classList.remove('reviews__item--current');
+      review[slideIndex+1].classList.add('reviews__item--current');
+      slideIndex++;
+    }
+  })
+  previousReview.addEventListener('click', function() {
+    if (review[0].classList.contains('reviews__item--current')) {
+      review[0].classList.remove('reviews__item--current');
+      review[review.length-1].classList.add('reviews__item--current');
+      slideIndex = review.length-1;
+    }
+    else {
+      review[slideIndex].classList.remove('reviews__item--current');
+      review[slideIndex-1].classList.add('reviews__item--current');
+      slideIndex--;
+    }
+  })
 };

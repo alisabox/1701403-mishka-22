@@ -1,5 +1,6 @@
 .catalog-item {
   border: 1px solid $footer-divider;
+  box-sizing: border-box;
   margin-bottom: 28px;
 
   &:hover {
@@ -19,8 +20,8 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     min-height: 657px;
-    max-width: 314px;
-    margin-right: 54px;
+    max-width: 316px;
+    margin-right: 51px;
     margin-bottom: 56px;
   }
 
@@ -77,6 +78,14 @@
   line-height: 24px;
   color: $basic-black;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
