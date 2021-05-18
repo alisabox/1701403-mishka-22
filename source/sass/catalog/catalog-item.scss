@@ -1,7 +1,7 @@
 .catalog-item {
   border: 1px solid $footer-divider;
   box-sizing: border-box;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
 
   &:hover {
     box-shadow: 0 6px 10px rgba($basic-black, 0.3);
@@ -14,7 +14,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     min-height: 334px;
-    margin-bottom: 54px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,6 +51,7 @@
 
 .catalog-item__details {
   padding: 27px 28px;
+  border: 1px solid $footer-divider;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -137,6 +138,7 @@
 
 .catalog-item__add {
   color: rgba($basic-black, 0.2);
+  margin-right: -4px;
 
   &:hover {
     color: $light-green;
