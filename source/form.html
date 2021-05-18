@@ -139,6 +139,7 @@
           <div class="form__wrapper">
             <fieldset class="form__fieldset form__telephone">
               <legend class="form__legend">Тел</legend>
+              <label class="visually-hidden" for="telephone">Номер телефона</label>
               <input class="form__input-text form__input-text--tel" type="tel" name="telephone" id="telephone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="^[0-9-+\s()]*$" required minlength="11" maxlength="16">
               <svg width="25" height="24">
                 <use xlink:href="img/sprite.svg#phone"></use>
@@ -146,6 +147,7 @@
             </fieldset>
             <fieldset class="form__fieldset form__email">
               <legend class="form__legend">E-mail</legend>
+              <label class="visually-hidden" for="email">Ваш Email</label>
               <input class="form__input-text form__input-text--email" type="email" name="email" id="email" placeholder="Ваш Email*" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
               <svg width="32" height="21">
                 <use xlink:href="img/sprite.svg#mail"></use>
@@ -154,6 +156,7 @@
           </div>
           <fieldset class="form__fieldset form__additional">
             <legend class="form__legend">Доп</legend>
+            <label class="visually-hidden" for="additional-text">Дополнительные пожелания к заказу</label>
             <textarea class="form__additional-text" name="additional-text" id="additional-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
           <div class="form__footer">

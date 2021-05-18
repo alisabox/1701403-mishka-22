@@ -1,6 +1,6 @@
 .production {
   position: relative;
-  margin: 0 30px 58px;
+  margin: 0 30px 56px;
   border: 1px solid $footer-divider;
 
   &:hover {
@@ -30,7 +30,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin: 22px 13px 27px 91px;
+  margin: 22px 13px 25px 91px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -110,6 +110,7 @@
 
   @media (min-width: $desktop-width) {
     background: url("../img/video-desktop.jpg");
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/video-desktop@2x.jpg");

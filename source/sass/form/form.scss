@@ -145,6 +145,7 @@
     box-sizing: border-box;
     border-radius: 50%;
     border: 2px solid $basic-black;
+    cursor: pointer;
 
     @media (min-width: $tablet-width) {
       width: 52px;
@@ -162,6 +163,7 @@
     align-self: center;
     box-sizing: border-box;
     border-radius: 50%;
+    cursor: pointer;
 
     @media (min-width: $tablet-width) {
       width: 22px;
@@ -218,6 +220,7 @@
     height: 38px;
     box-sizing: border-box;
     border: 2px solid $basic-black;
+    cursor: pointer;
 
     @media (min-width: $tablet-width) {
       left: -82px;

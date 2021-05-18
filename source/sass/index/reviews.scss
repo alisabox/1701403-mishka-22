@@ -97,6 +97,11 @@
 
 .reviews__item {
   margin: 0;
+  display: none;
+}
+
+.reviews__item--current {
+  display: block;
 }
 
 .reviews__text {

@@ -1,5 +1,7 @@
 .catalog-item {
-  margin-bottom: 28px;
+  border: 1px solid $footer-divider;
+  box-sizing: border-box;
+  margin-bottom: 27px;
 
   &:hover {
     box-shadow: 0 6px 10px rgba($basic-black, 0.3);
@@ -12,14 +14,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     min-height: 334px;
-    margin-bottom: 54px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
     min-height: 657px;
-    max-width: 314px;
-    margin-right: 54px;
+    max-width: 316px;
+    margin-right: 51px;
     margin-bottom: 56px;
   }
 
@@ -78,6 +80,14 @@
   color: $basic-black;
   text-decoration: none;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
@@ -128,6 +138,7 @@
 
 .catalog-item__add {
   color: rgba($basic-black, 0.2);
+  margin-right: -4px;
 
   &:hover {
     color: $light-green;

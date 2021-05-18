@@ -107,7 +107,7 @@
   color: $basic-dark-grey;
   background-color: transparent;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 20px;
     display: flex;
     align-self: stretch;
